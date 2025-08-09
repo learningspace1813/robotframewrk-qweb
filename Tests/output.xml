@@ -1,0 +1,1176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-08-10T02:04:43.561149" rpa="false" schemaversion="5">
+<suite id="s1" name="guruPageScript" source="C:\Users\learn\PycharmProjects\PythonProject1\Tests\guruPageScript.robot">
+<test id="s1-t1" name="Testing_GURU99_app_URL_validation" line="136">
+<kw name="Open Browser" owner="QWeb">
+<msg time="2025-08-10T02:04:45.312735" level="INFO">QWeb version number: 3.6.1</msg>
+<msg time="2025-08-10T02:04:46.660887" level="INFO">Browser: chrome</msg>
+<msg time="2025-08-10T02:04:46.670686" level="INFO">Browser version: 138.0.7204.184</msg>
+<msg time="2025-08-10T02:04:46.670917" level="INFO">Chromedriver version: 138.0.7204.183 (e90faf484ddbc033fc9bf337621761d3dd5c5289-refs/branch-heads/7204@{#2435})</msg>
+<arg>${GuruSiteURL}</arg>
+<arg>chrome</arg>
+<arg>options=--incognito</arg>
+<tag>Browser</tag>
+<tag>Interaction</tag>
+<doc>Open new browser to given url.</doc>
+<status status="PASS" start="2025-08-10T02:04:45.308308" elapsed="2.910920"/>
+</kw>
+<kw name="Get Text" owner="QWeb">
+<msg time="2025-08-10T02:04:48.346742" level="INFO">${homepageText} = Enter your email address to getaccess details to demo site</msg>
+<var>${homepageText}</var>
+<arg>${GuruhomepageText}</arg>
+<tag>Getters</tag>
+<tag>Text</tag>
+<doc>Get text from element specified by xpath.</doc>
+<status status="PASS" start="2025-08-10T02:04:48.219573" elapsed="0.127214"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>text: "${homepageText}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-08-10T02:04:48.347045" elapsed="0.000245"/>
+</kw>
+<status status="PASS" start="2025-08-10T02:04:45.306094" elapsed="3.041385"/>
+</test>
+<test id="s1-t2" name="Testing_GURU99_app_radio&amp;checkbox_ButtonLink" line="147">
+<kw name="Click Element" owner="QWeb">
+<arg>${SeleniumDrpdwn}</arg>
+<tag>Interaction</tag>
+<doc>Click element specified by xpath.</doc>
+<status status="PASS" start="2025-08-10T02:04:48.348228" elapsed="0.210830"/>
+</kw>
+<kw name="Click Element" owner="QWeb">
+<arg>${Radio&amp;CheckBoxLink}</arg>
+<tag>Interaction</tag>
+<doc>Click element specified by xpath.</doc>
+<status status="PASS" start="2025-08-10T02:04:48.559382" elapsed="0.682166"/>
+</kw>
+<kw name="Get Text" owner="QWeb">
+<msg time="2025-08-10T02:04:49.354318" level="INFO">${UItext} = Radio</msg>
+<var>${UItext}</var>
+<arg>${UITestR-C}</arg>
+<tag>Getters</tag>
+<tag>Text</tag>
+<doc>Get text from element specified by xpath.</doc>
+<status status="PASS" start="2025-08-10T02:04:49.242147" elapsed="0.112213"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>...</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-08-10T02:04:49.354696" elapsed="0.000411"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>verified text:${UItext}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-08-10T02:04:49.355423" elapsed="0.000446"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${UItext}</arg>
+<arg>Radio</arg>
+<arg>Custom error</arg>
+<arg>values=True</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-08-10T02:04:49.356097" elapsed="0.000353"/>
+</kw>
+<status status="PASS" start="2025-08-10T02:04:48.347853" elapsed="1.008835"/>
+</test>
+<test id="s1-t3" name="Testing_GURU99_app_checkboxes_radioButtons" line="156">
+<kw name="Click Element" owner="QWeb">
+<arg>${RadioButtonOpt1}</arg>
+<tag>Interaction</tag>
+<doc>Click element specified by xpath.</doc>
+<status status="PASS" start="2025-08-10T02:04:49.357557" elapsed="0.146522"/>
+</kw>
+<kw name="Click Element" owner="QWeb">
+<arg>${RadioButtonOpt2}</arg>
+<tag>Interaction</tag>
+<doc>Click element specified by xpath.</doc>
+<status status="PASS" start="2025-08-10T02:04:49.504616" elapsed="0.141254"/>
+</kw>
+<kw name="Click Element" owner="QWeb">
+<arg>${RadioButtonOpt3}</arg>
+<tag>Interaction</tag>
+<doc>Click element specified by xpath.</doc>
+<status status="PASS" start="2025-08-10T02:04:49.646255" elapsed="0.245406"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>All radiobuttons are clicked and tested one byone!</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-08-10T02:04:49.891941" elapsed="0.000208"/>
+</kw>
+<status status="PASS" start="2025-08-10T02:04:49.357066" elapsed="0.535281"/>
+</test>
+<test id="s1-t4" name="Testing_GURU99_app_checkboxes" line="162">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>...</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-08-10T02:04:49.893044" elapsed="0.000173"/>
+</kw>
+<kw name="Click Checkbox" owner="QWeb">
+<arg>Checkbox1</arg>
+<arg>on</arg>
+<tag>Checkbox</tag>
+<tag>Interaction</tag>
+<doc>Check or uncheck a checkbox.</doc>
+<status status="PASS" start="2025-08-10T02:04:49.893395" elapsed="0.311479"/>
+</kw>
+<kw name="Verify Checkbox" owner="QWeb">
+<arg>Checkbox1</arg>
+<arg>Checkbox1</arg>
+<tag>Checkbox</tag>
+<tag>Verification</tag>
+<doc>Verify that checkbox element exist.</doc>
+<status status="PASS" start="2025-08-10T02:04:50.205187" elapsed="0.258693"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Verified Checkbox</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-08-10T02:04:50.464135" elapsed="0.000248"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-08-10T02:04:52.468189" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-08-10T02:04:50.464573" elapsed="2.004076"/>
+</kw>
+<kw name="Click Checkbox" owner="QWeb">
+<arg>${CheckBox2}</arg>
+<arg>on</arg>
+<tag>Checkbox</tag>
+<tag>Interaction</tag>
+<doc>Check or uncheck a checkbox.</doc>
+<status status="PASS" start="2025-08-10T02:04:52.470023" elapsed="0.238120"/>
+</kw>
+<kw name="Verify Checkbox Status" owner="QWeb">
+<arg>${CheckBox2}</arg>
+<arg>enabled</arg>
+<tag>Checkbox</tag>
+<tag>Verification</tag>
+<doc>Verify checkbox is enabled or disabled.</doc>
+<status status="PASS" start="2025-08-10T02:04:52.708486" elapsed="0.110580"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Verified Checkbox status</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-08-10T02:04:52.819362" elapsed="0.000228"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-08-10T02:04:54.820401" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-08-10T02:04:52.819766" elapsed="2.000755"/>
+</kw>
+<kw name="Click Checkbox" owner="QWeb">
+<arg>${CheckBox3}</arg>
+<arg>on</arg>
+<tag>Checkbox</tag>
+<tag>Interaction</tag>
+<doc>Check or uncheck a checkbox.</doc>
+<status status="PASS" start="2025-08-10T02:04:54.820923" elapsed="0.114760"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Verified Checkbox value</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-08-10T02:04:54.936184" elapsed="0.000328"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-08-10T02:04:56.937382" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-08-10T02:04:54.936718" elapsed="2.002143"/>
+</kw>
+<status status="PASS" start="2025-08-10T02:04:49.892704" elapsed="7.048082"/>
+</test>
+<test id="s1-t5" name="Testing_GURU99_app_Accessing_Links" line="182">
+<kw name="Click Element" owner="QWeb">
+<arg>${SeleniumDrpdwn}</arg>
+<tag>Interaction</tag>
+<doc>Click element specified by xpath.</doc>
+<status status="PASS" start="2025-08-10T02:04:56.941732" elapsed="0.143540"/>
+</kw>
+<kw name="Click Element" owner="QWeb">
+<arg>${accessingLinksopt}</arg>
+<tag>Interaction</tag>
+<doc>Click element specified by xpath.</doc>
+<status status="PASS" start="2025-08-10T02:04:57.086319" elapsed="1.240617"/>
+</kw>
+<kw name="Click Text" owner="QWeb">
+<arg>${accessLink1}</arg>
+<tag>Interaction</tag>
+<tag>Text</tag>
+<doc>Click text on web page.</doc>
+<status status="PASS" start="2025-08-10T02:04:58.327439" elapsed="1.901523"/>
+</kw>
+<kw name="Get Url" owner="QWeb">
+<msg time="2025-08-10T02:05:00.260589" level="INFO">${accessLink1Text} = https://www.google.com/</msg>
+<var>${accessLink1Text}</var>
+<tag>Browser</tag>
+<tag>Getters</tag>
+<doc>Gets current url/location.</doc>
+<status status="PASS" start="2025-08-10T02:05:00.229441" elapsed="0.031201"/>
+</kw>
+<kw name="Verify Url" owner="QWeb">
+<arg>https://www.google.com/</arg>
+<tag>Browser</tag>
+<tag>Verification</tag>
+<doc>Verifies that current page url/location matches expected url.</doc>
+<status status="PASS" start="2025-08-10T02:05:00.261346" elapsed="0.076355"/>
+</kw>
+<kw name="Get Text" owner="QWeb">
+<msg time="2025-08-10T02:05:00.559204" level="INFO">${URLhomeText1} = </msg>
+<var>${URLhomeText1}</var>
+<arg>${forGoogleHometitle}</arg>
+<tag>Getters</tag>
+<tag>Text</tag>
+<doc>Get text from element specified by xpath.</doc>
+<status status="PASS" start="2025-08-10T02:05:00.337998" elapsed="0.221250"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${URLhomeText1}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-08-10T02:05:00.559671" elapsed="0.000390"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-08-10T02:05:01.561013" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-08-10T02:05:00.560423" elapsed="1.000700"/>
+</kw>
+<kw name="Back" owner="QWeb">
+<tag>Browser</tag>
+<tag>Interaction</tag>
+<doc>Navigates back in the current window.</doc>
+<status status="PASS" start="2025-08-10T02:05:01.561418" elapsed="0.057752"/>
+</kw>
+<kw name="Click Text" owner="QWeb">
+<arg>${accessLink2}</arg>
+<tag>Interaction</tag>
+<tag>Text</tag>
+<doc>Click text on web page.</doc>
+<status status="PASS" start="2025-08-10T02:05:01.622484" elapsed="1.536447"/>
+</kw>
+<kw name="Get Title" owner="QWeb">
+<msg time="2025-08-10T02:05:03.166191" level="INFO">${accessLink2Text} = Facebook – log in or sign up</msg>
+<var>${accessLink2Text}</var>
+<tag>Browser</tag>
+<tag>Getters</tag>
+<doc>Gets the title of current page/window.</doc>
+<status status="PASS" start="2025-08-10T02:05:03.159308" elapsed="0.006954"/>
+</kw>
+<kw name="Verify Title" owner="QWeb">
+<arg>Facebook – log in or sign up</arg>
+<tag>Browser</tag>
+<tag>Verification</tag>
+<doc>Verifies that current page's title matches expected title.</doc>
+<status status="PASS" start="2025-08-10T02:05:03.166584" elapsed="0.023085"/>
+</kw>
+<kw name="Verify Text" owner="QWeb">
+<arg>Facebook helps you connect and share with the people in your life.</arg>
+<tag>Text</tag>
+<tag>Verification</tag>
+<doc>Verify page contains given text.</doc>
+<status status="PASS" start="2025-08-10T02:05:03.190284" elapsed="0.144876"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-08-10T02:05:04.336185" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-08-10T02:05:03.335481" elapsed="1.000797"/>
+</kw>
+<kw name="Back" owner="QWeb">
+<tag>Browser</tag>
+<tag>Interaction</tag>
+<doc>Navigates back in the current window.</doc>
+<status status="PASS" start="2025-08-10T02:05:04.336575" elapsed="0.057730"/>
+</kw>
+<status status="PASS" start="2025-08-10T02:04:56.941292" elapsed="7.453913"/>
+</test>
+<test id="s1-t6" name="Testing_GURU99_app_Ajax_Demo" line="205">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-08-10T02:05:06.402849" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-08-10T02:05:04.402407" elapsed="2.000558"/>
+</kw>
+<kw name="Click Element" owner="QWeb">
+<arg>${SeleniumDrpdwn}</arg>
+<tag>Interaction</tag>
+<doc>Click element specified by xpath.</doc>
+<status status="PASS" start="2025-08-10T02:05:06.403274" elapsed="0.216376"/>
+</kw>
+<kw name="Click Element" owner="QWeb">
+<arg>${ajaxDemoDDopt}</arg>
+<tag>Interaction</tag>
+<doc>Click element specified by xpath.</doc>
+<status status="PASS" start="2025-08-10T02:05:06.620033" elapsed="0.729791"/>
+</kw>
+<kw name="Click Element" owner="QWeb">
+<arg>${ajaxRadioB1}</arg>
+<tag>Interaction</tag>
+<doc>Click element specified by xpath.</doc>
+<status status="PASS" start="2025-08-10T02:05:07.350094" elapsed="0.175753"/>
+</kw>
+<kw name="Click Element" owner="QWeb">
+<arg>${resetAjax}</arg>
+<tag>Interaction</tag>
+<doc>Click element specified by xpath.</doc>
+<status status="PASS" start="2025-08-10T02:05:07.526470" elapsed="0.144699"/>
+</kw>
+<kw name="Click Element" owner="QWeb">
+<arg>${ajaxRadioB1}</arg>
+<tag>Interaction</tag>
+<doc>Click element specified by xpath.</doc>
+<status status="PASS" start="2025-08-10T02:05:07.672262" elapsed="0.105909"/>
+</kw>
+<kw name="Click Element" owner="QWeb">
+<arg>${checkAjax}</arg>
+<tag>Interaction</tag>
+<doc>Click element specified by xpath.</doc>
+<status status="PASS" start="2025-08-10T02:05:07.778431" elapsed="0.145074"/>
+</kw>
+<status status="PASS" start="2025-08-10T02:05:04.401042" elapsed="3.522850"/>
+</test>
+<test id="s1-t7" name="Testing_GURU99_app_Inside_outside_block_level_tag" line="214">
+<kw name="Click Element" owner="QWeb">
+<arg>${SeleniumDrpdwn}</arg>
+<tag>Interaction</tag>
+<doc>Click element specified by xpath.</doc>
+<status status="PASS" start="2025-08-10T02:05:07.925798" elapsed="0.138882"/>
+</kw>
+<kw name="Click Element" owner="QWeb">
+<arg>${insideOutsideBlockTag}</arg>
+<tag>Interaction</tag>
+<doc>Click element specified by xpath.</doc>
+<status status="PASS" start="2025-08-10T02:05:08.064975" elapsed="0.613863"/>
+</kw>
+<kw name="Click Element" owner="QWeb">
+<arg>${insideBlockTag}</arg>
+<tag>Interaction</tag>
+<doc>Click element specified by xpath.</doc>
+<status status="PASS" start="2025-08-10T02:05:08.679460" elapsed="1.381279"/>
+</kw>
+<kw name="Get Url" owner="QWeb">
+<msg time="2025-08-10T02:05:10.070229" level="INFO">${accessLink1Text} = https://www.google.com/</msg>
+<var>${accessLink1Text}</var>
+<tag>Browser</tag>
+<tag>Getters</tag>
+<doc>Gets current url/location.</doc>
+<status status="PASS" start="2025-08-10T02:05:10.061423" elapsed="0.008846"/>
+</kw>
+<kw name="Verify Url" owner="QWeb">
+<arg>https://www.google.com/</arg>
+<tag>Browser</tag>
+<tag>Verification</tag>
+<doc>Verifies that current page url/location matches expected url.</doc>
+<status status="PASS" start="2025-08-10T02:05:10.070500" elapsed="0.050407"/>
+</kw>
+<kw name="Get Text" owner="QWeb">
+<msg time="2025-08-10T02:05:10.235633" level="INFO">${URLhomeText1} = </msg>
+<var>${URLhomeText1}</var>
+<arg>${for Google Home title}</arg>
+<tag>Getters</tag>
+<tag>Text</tag>
+<doc>Get text from element specified by xpath.</doc>
+<status status="PASS" start="2025-08-10T02:05:10.121213" elapsed="0.114460"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${URLhomeText1}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-08-10T02:05:10.235936" elapsed="0.000236"/>
+</kw>
+<kw name="Back" owner="QWeb">
+<tag>Browser</tag>
+<tag>Interaction</tag>
+<doc>Navigates back in the current window.</doc>
+<status status="PASS" start="2025-08-10T02:05:10.236348" elapsed="0.060228"/>
+</kw>
+<kw name="Click Text" owner="QWeb">
+<arg>${outsideBlockTag}</arg>
+<tag>Interaction</tag>
+<tag>Text</tag>
+<doc>Click text on web page.</doc>
+<status status="PASS" start="2025-08-10T02:05:10.297087" elapsed="1.012227"/>
+</kw>
+<kw name="Get Title" owner="QWeb">
+<msg time="2025-08-10T02:05:11.316291" level="INFO">${accessLink2Text} = Facebook – log in or sign up</msg>
+<var>${accessLink2Text}</var>
+<tag>Browser</tag>
+<tag>Getters</tag>
+<doc>Gets the title of current page/window.</doc>
+<status status="PASS" start="2025-08-10T02:05:11.309829" elapsed="0.006539"/>
+</kw>
+<kw name="Verify Title" owner="QWeb">
+<arg>Facebook – log in or sign up</arg>
+<tag>Browser</tag>
+<tag>Verification</tag>
+<doc>Verifies that current page's title matches expected title.</doc>
+<status status="PASS" start="2025-08-10T02:05:11.317496" elapsed="0.031167"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-08-10T02:05:12.349646" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-08-10T02:05:11.349053" elapsed="1.000701"/>
+</kw>
+<kw name="Back" owner="QWeb">
+<tag>Browser</tag>
+<tag>Interaction</tag>
+<doc>Navigates back in the current window.</doc>
+<status status="PASS" start="2025-08-10T02:05:12.350047" elapsed="0.072418"/>
+</kw>
+<status status="PASS" start="2025-08-10T02:05:07.924827" elapsed="4.498078"/>
+</test>
+<test id="s1-t8" name="Testing_GURU99_app_delete_customer_form" line="232">
+<kw name="Click Element" owner="QWeb">
+<arg>${SeleniumDrpdwn}</arg>
+<tag>Interaction</tag>
+<doc>Click element specified by xpath.</doc>
+<status status="PASS" start="2025-08-10T02:05:12.424395" elapsed="0.237718"/>
+</kw>
+<kw name="Click Element" owner="QWeb">
+<arg>${deleteCustFom}</arg>
+<tag>Interaction</tag>
+<doc>Click element specified by xpath.</doc>
+<status status="PASS" start="2025-08-10T02:05:12.662406" elapsed="0.401903"/>
+</kw>
+<kw name="Type Text" owner="QWeb">
+<arg>${custIDinput}</arg>
+<arg>12345678</arg>
+<tag>Input</tag>
+<tag>Interaction</tag>
+<doc>Type given text to a text field.</doc>
+<status status="PASS" start="2025-08-10T02:05:13.064578" elapsed="0.259410"/>
+</kw>
+<kw name="Click Element" owner="QWeb">
+<arg>${resetForm}</arg>
+<tag>Interaction</tag>
+<doc>Click element specified by xpath.</doc>
+<status status="PASS" start="2025-08-10T02:05:13.324288" elapsed="0.130755"/>
+</kw>
+<kw name="Type Text" owner="QWeb">
+<arg>${custIDinput}</arg>
+<arg>12345678</arg>
+<tag>Input</tag>
+<tag>Interaction</tag>
+<doc>Type given text to a text field.</doc>
+<status status="PASS" start="2025-08-10T02:05:13.455345" elapsed="0.195493"/>
+</kw>
+<kw name="Click Element" owner="QWeb">
+<arg>${submitForm}</arg>
+<tag>Interaction</tag>
+<doc>Click element specified by xpath.</doc>
+<status status="PASS" start="2025-08-10T02:05:13.651246" elapsed="0.153754"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-08-10T02:05:14.808284" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-08-10T02:05:13.805401" elapsed="1.002984"/>
+</kw>
+<kw name="Close Alert" owner="QWeb">
+<arg>Accept</arg>
+<arg>2s</arg>
+<tag>Alert</tag>
+<tag>Interaction</tag>
+<doc>Close popup alert.</doc>
+<status status="PASS" start="2025-08-10T02:05:14.808637" elapsed="0.004627"/>
+</kw>
+<kw name="Close Alert" owner="QWeb">
+<arg>Accept</arg>
+<arg>2s</arg>
+<tag>Alert</tag>
+<tag>Interaction</tag>
+<doc>Close popup alert.</doc>
+<status status="PASS" start="2025-08-10T02:05:14.813773" elapsed="0.207957"/>
+</kw>
+<kw name="Back" owner="QWeb">
+<tag>Browser</tag>
+<tag>Interaction</tag>
+<doc>Navigates back in the current window.</doc>
+<status status="PASS" start="2025-08-10T02:05:15.022176" elapsed="0.470760"/>
+</kw>
+<status status="PASS" start="2025-08-10T02:05:12.423635" elapsed="3.069794"/>
+</test>
+<test id="s1-t9" name="Testing_GURU99_app_test_Yahoo_messenger" line="249">
+<kw name="Click Element" owner="QWeb">
+<arg>${SeleniumDrpdwn}</arg>
+<tag>Interaction</tag>
+<doc>Click element specified by xpath.</doc>
+<status status="PASS" start="2025-08-10T02:05:15.494808" elapsed="0.189067"/>
+</kw>
+<kw name="Click Element" owner="QWeb">
+<arg>${Yahoo}</arg>
+<tag>Interaction</tag>
+<doc>Click element specified by xpath.</doc>
+<status status="PASS" start="2025-08-10T02:05:15.684294" elapsed="7.474265"/>
+</kw>
+<kw name="Get Text" owner="QWeb">
+<msg time="2025-08-10T02:05:23.249711" level="INFO">${YahooPageText} = This is DEMO site for TESTING purpose</msg>
+<var>${YahooPageText}</var>
+<arg>${yahooPageHeadline}</arg>
+<tag>Getters</tag>
+<tag>Text</tag>
+<doc>Get text from element specified by xpath.</doc>
+<status status="PASS" start="2025-08-10T02:05:23.158884" elapsed="0.090905"/>
+</kw>
+<kw name="Verify Text" owner="QWeb">
+<arg>This is DEMO site for TESTING purpose</arg>
+<tag>Text</tag>
+<tag>Verification</tag>
+<doc>Verify page contains given text.</doc>
+<status status="PASS" start="2025-08-10T02:05:23.250290" elapsed="0.142776"/>
+</kw>
+<kw name="Back" owner="QWeb">
+<tag>Browser</tag>
+<tag>Interaction</tag>
+<doc>Navigates back in the current window.</doc>
+<status status="PASS" start="2025-08-10T02:05:23.393343" elapsed="0.056579"/>
+</kw>
+<status status="PASS" start="2025-08-10T02:05:15.494222" elapsed="7.956130"/>
+</test>
+<test id="s1-t10" name="Testing_GURU99_app_toolTip_page_verify" line="257">
+<kw name="Click Element" owner="QWeb">
+<arg>${SeleniumDrpdwn}</arg>
+<tag>Interaction</tag>
+<doc>Click element specified by xpath.</doc>
+<status status="PASS" start="2025-08-10T02:05:23.452229" elapsed="0.151547"/>
+</kw>
+<kw name="Click Element" owner="QWeb">
+<arg>${toolTip}</arg>
+<tag>Interaction</tag>
+<doc>Click element specified by xpath.</doc>
+<status status="PASS" start="2025-08-10T02:05:23.604085" elapsed="1.181169"/>
+</kw>
+<kw name="Verify Text" owner="QWeb">
+<arg>Using any HTML inside the tooltip</arg>
+<tag>Text</tag>
+<tag>Verification</tag>
+<doc>Verify page contains given text.</doc>
+<status status="PASS" start="2025-08-10T02:05:24.785599" elapsed="0.193922"/>
+</kw>
+<kw name="Back" owner="QWeb">
+<tag>Browser</tag>
+<tag>Interaction</tag>
+<doc>Navigates back in the current window.</doc>
+<status status="PASS" start="2025-08-10T02:05:24.980103" elapsed="0.072899"/>
+</kw>
+<status status="PASS" start="2025-08-10T02:05:23.451254" elapsed="1.602159"/>
+</test>
+<test id="s1-t11" name="Testing_GURU99_app_file_upload" line="266">
+<kw name="Click Element" owner="QWeb">
+<arg>${SeleniumDrpdwn}</arg>
+<tag>Interaction</tag>
+<doc>Click element specified by xpath.</doc>
+<status status="PASS" start="2025-08-10T02:05:25.055057" elapsed="0.174585"/>
+</kw>
+<kw name="Click Element" owner="QWeb">
+<arg>${fileUploadOpt}</arg>
+<tag>Interaction</tag>
+<doc>Click element specified by xpath.</doc>
+<status status="PASS" start="2025-08-10T02:05:25.230116" elapsed="21.896646"/>
+</kw>
+<kw name="Upload File" owner="QWeb">
+<arg>${uploadFile}</arg>
+<arg>C:/Users/learn/Downloads/1.jpg</arg>
+<tag>File</tag>
+<tag>Input</tag>
+<tag>Interaction</tag>
+<doc>Uploads a file to an HTML input element of type ``file``.</doc>
+<status status="PASS" start="2025-08-10T02:05:47.127212" elapsed="0.124775"/>
+</kw>
+<kw name="Click Checkbox" owner="QWeb">
+<arg>I accept</arg>
+<arg>on</arg>
+<tag>Checkbox</tag>
+<tag>Interaction</tag>
+<doc>Check or uncheck a checkbox.</doc>
+<status status="PASS" start="2025-08-10T02:05:47.252265" elapsed="0.350949"/>
+</kw>
+<kw name="Click Element" owner="QWeb">
+<arg>${submitFile}</arg>
+<tag>Interaction</tag>
+<doc>Click element specified by xpath.</doc>
+<status status="PASS" start="2025-08-10T02:05:47.603587" elapsed="0.186716"/>
+</kw>
+<kw name="Get Text" owner="QWeb">
+<msg time="2025-08-10T02:05:48.018636" level="INFO">${verifyText} = 1 filehas been successfully uploaded.</msg>
+<var>${verifyText}</var>
+<arg>//h3//center</arg>
+<tag>Getters</tag>
+<tag>Text</tag>
+<doc>Get text from element specified by xpath.</doc>
+<status status="PASS" start="2025-08-10T02:05:47.790598" elapsed="0.228080"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-08-10T02:05:50.019566" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-08-10T02:05:48.019000" elapsed="2.000674"/>
+</kw>
+<kw name="Back" owner="QWeb">
+<tag>Browser</tag>
+<tag>Interaction</tag>
+<doc>Navigates back in the current window.</doc>
+<status status="PASS" start="2025-08-10T02:05:50.019953" elapsed="0.059445"/>
+</kw>
+<status status="PASS" start="2025-08-10T02:05:25.054311" elapsed="25.026905"/>
+</test>
+<test id="s1-t12" name="Testing_GURU99_app_login_credentials" line="277">
+<kw name="Click Element" owner="QWeb">
+<arg>${SeleniumDrpdwn}</arg>
+<tag>Interaction</tag>
+<doc>Click element specified by xpath.</doc>
+<status status="PASS" start="2025-08-10T02:05:50.086442" elapsed="0.236458"/>
+</kw>
+<kw name="Click Element" owner="QWeb">
+<arg>${login}</arg>
+<tag>Interaction</tag>
+<doc>Click element specified by xpath.</doc>
+<status status="PASS" start="2025-08-10T02:05:50.323748" elapsed="0.608016"/>
+</kw>
+<kw name="Type Text" owner="QWeb">
+<arg>${username}</arg>
+<arg>ivory@gmail.com</arg>
+<tag>Input</tag>
+<tag>Interaction</tag>
+<doc>Type given text to a text field.</doc>
+<status status="PASS" start="2025-08-10T02:05:50.932146" elapsed="0.329609"/>
+</kw>
+<kw name="Type Text" owner="QWeb">
+<arg>${password}</arg>
+<arg>Pass@1234</arg>
+<tag>Input</tag>
+<tag>Interaction</tag>
+<doc>Type given text to a text field.</doc>
+<status status="PASS" start="2025-08-10T02:05:51.262224" elapsed="0.248472"/>
+</kw>
+<kw name="Click Element" owner="QWeb">
+<arg>${signIn}</arg>
+<tag>Interaction</tag>
+<doc>Click element specified by xpath.</doc>
+<status status="PASS" start="2025-08-10T02:05:51.511144" elapsed="0.229249"/>
+</kw>
+<kw name="Verify Text" owner="QWeb">
+<arg>Successfully Logged in...</arg>
+<tag>Text</tag>
+<tag>Verification</tag>
+<doc>Verify page contains given text.</doc>
+<status status="PASS" start="2025-08-10T02:05:51.741873" elapsed="0.875593"/>
+</kw>
+<status status="PASS" start="2025-08-10T02:05:50.085696" elapsed="2.532139"/>
+</test>
+<test id="s1-t13" name="Testing_GURU99_app_Social_Icon" line="286">
+<kw name="Click Element" owner="QWeb">
+<arg>${SeleniumDrpdwn}</arg>
+<tag>Interaction</tag>
+<doc>Click element specified by xpath.</doc>
+<status status="PASS" start="2025-08-10T02:05:52.620047" elapsed="0.176296"/>
+</kw>
+<kw name="Click Element" owner="QWeb">
+<arg>${socialIcon}</arg>
+<tag>Interaction</tag>
+<doc>Click element specified by xpath.</doc>
+<status status="PASS" start="2025-08-10T02:05:52.796768" elapsed="1.586835"/>
+</kw>
+<kw name="Click Element" owner="QWeb">
+<arg>${mail}</arg>
+<tag>Interaction</tag>
+<doc>Click element specified by xpath.</doc>
+<status status="PASS" start="2025-08-10T02:05:54.386584" elapsed="1.162223"/>
+</kw>
+<kw name="Verify Text" owner="QWeb">
+<arg>Join Guru99 NewsLetter</arg>
+<tag>Text</tag>
+<tag>Verification</tag>
+<doc>Verify page contains given text.</doc>
+<status status="PASS" start="2025-08-10T02:05:55.549146" elapsed="0.162672"/>
+</kw>
+<kw name="Type Text" owner="QWeb">
+<arg>${email}</arg>
+<arg>ivory@gmail.com</arg>
+<tag>Input</tag>
+<tag>Interaction</tag>
+<doc>Type given text to a text field.</doc>
+<status status="PASS" start="2025-08-10T02:05:55.712352" elapsed="0.339570"/>
+</kw>
+<kw name="Click Element" owner="QWeb">
+<arg>${Rsubmit}</arg>
+<tag>Interaction</tag>
+<doc>Click element specified by xpath.</doc>
+<status status="PASS" start="2025-08-10T02:05:56.052453" elapsed="2.428958"/>
+</kw>
+<kw name="Back" owner="QWeb">
+<tag>Browser</tag>
+<tag>Interaction</tag>
+<doc>Navigates back in the current window.</doc>
+<status status="PASS" start="2025-08-10T02:05:58.481879" elapsed="0.086379"/>
+</kw>
+<kw name="Back" owner="QWeb">
+<tag>Browser</tag>
+<tag>Interaction</tag>
+<doc>Navigates back in the current window.</doc>
+<status status="PASS" start="2025-08-10T02:05:58.570225" elapsed="0.070545"/>
+</kw>
+<kw name="Click Element" owner="QWeb">
+<arg>${google}</arg>
+<tag>Interaction</tag>
+<doc>Click element specified by xpath.</doc>
+<status status="PASS" start="2025-08-10T02:05:58.641798" elapsed="0.321304"/>
+</kw>
+<kw name="Switch Window" owner="QWeb">
+<msg time="2025-08-10T02:05:58.983622" level="INFO">Current browser contains 2 tabs</msg>
+<arg>index=1</arg>
+<tag>Browser</tag>
+<tag>Interaction</tag>
+<tag>Window</tag>
+<doc>Switch to another tab.</doc>
+<status status="PASS" start="2025-08-10T02:05:58.963846" elapsed="0.075960"/>
+</kw>
+<kw name="Click Element" owner="QWeb">
+<arg>${youtube}</arg>
+<tag>Interaction</tag>
+<doc>Click element specified by xpath.</doc>
+<status status="PASS" start="2025-08-10T02:05:59.042306" elapsed="0.394925"/>
+</kw>
+<kw name="Switch Window" owner="QWeb">
+<msg time="2025-08-10T02:05:59.484476" level="INFO">Current browser contains 3 tabs</msg>
+<arg>index=1</arg>
+<tag>Browser</tag>
+<tag>Interaction</tag>
+<tag>Window</tag>
+<doc>Switch to another tab.</doc>
+<status status="PASS" start="2025-08-10T02:05:59.438912" elapsed="0.112832"/>
+</kw>
+<kw name="Click Element" owner="QWeb">
+<arg>${github}</arg>
+<tag>Interaction</tag>
+<doc>Click element specified by xpath.</doc>
+<status status="PASS" start="2025-08-10T02:05:59.552346" elapsed="2.616183"/>
+</kw>
+<kw name="Back" owner="QWeb">
+<tag>Browser</tag>
+<tag>Interaction</tag>
+<doc>Navigates back in the current window.</doc>
+<status status="PASS" start="2025-08-10T02:06:02.169238" elapsed="0.132442"/>
+</kw>
+<kw name="Click Element" owner="QWeb">
+<arg>${facebook}</arg>
+<tag>Interaction</tag>
+<doc>Click element specified by xpath.</doc>
+<status status="PASS" start="2025-08-10T02:06:02.307191" elapsed="0.514055"/>
+</kw>
+<kw name="Switch Window" owner="QWeb">
+<msg time="2025-08-10T02:06:02.890072" level="INFO">Current browser contains 4 tabs</msg>
+<arg>index=1</arg>
+<tag>Browser</tag>
+<tag>Interaction</tag>
+<tag>Window</tag>
+<doc>Switch to another tab.</doc>
+<status status="PASS" start="2025-08-10T02:06:02.823366" elapsed="0.147183"/>
+</kw>
+<kw name="Click Element" owner="QWeb">
+<arg>${rss}</arg>
+<tag>Interaction</tag>
+<doc>Click element specified by xpath.</doc>
+<status status="PASS" start="2025-08-10T02:06:02.971211" elapsed="0.588125"/>
+</kw>
+<kw name="Switch Window" owner="QWeb">
+<msg time="2025-08-10T02:06:03.655383" level="INFO">Current browser contains 5 tabs</msg>
+<arg>index=1</arg>
+<tag>Browser</tag>
+<tag>Interaction</tag>
+<tag>Window</tag>
+<doc>Switch to another tab.</doc>
+<status status="PASS" start="2025-08-10T02:06:03.560096" elapsed="0.170556"/>
+</kw>
+<status status="PASS" start="2025-08-10T02:05:52.618780" elapsed="11.112898"/>
+</test>
+<test id="s1-t14" name="Testing_GURU99_app_selenium_auto_TT" line="321">
+<kw name="Click Element" owner="QWeb">
+<arg>${SeleniumDrpdwn}</arg>
+<tag>Interaction</tag>
+<doc>Click element specified by xpath.</doc>
+<status status="PASS" start="2025-08-10T02:06:03.742533" elapsed="0.489797"/>
+</kw>
+<kw name="Click Element" owner="QWeb">
+<arg>${seleniumAutoIT}</arg>
+<tag>Interaction</tag>
+<doc>Click element specified by xpath.</doc>
+<status status="PASS" start="2025-08-10T02:06:04.233084" elapsed="3.769673"/>
+</kw>
+<kw name="Click Element" owner="QWeb">
+<arg>${createArticle}</arg>
+<tag>Interaction</tag>
+<doc>Click element specified by xpath.</doc>
+<status status="PASS" start="2025-08-10T02:06:08.004775" elapsed="0.627934"/>
+</kw>
+<kw name="Verify Text" owner="QWeb">
+<arg>Write For Us</arg>
+<tag>Text</tag>
+<tag>Verification</tag>
+<doc>Verify page contains given text.</doc>
+<status status="PASS" start="2025-08-10T02:06:08.633460" elapsed="1.871390"/>
+</kw>
+<kw name="Type Text" owner="QWeb">
+<arg>${TTname}</arg>
+<arg>ivory</arg>
+<tag>Input</tag>
+<tag>Interaction</tag>
+<doc>Type given text to a text field.</doc>
+<status status="PASS" start="2025-08-10T02:06:10.507728" elapsed="1.939364"/>
+</kw>
+<kw name="Type Text" owner="QWeb">
+<arg>${TTemail}</arg>
+<arg>ivory@gmail.com</arg>
+<tag>Input</tag>
+<tag>Interaction</tag>
+<doc>Type given text to a text field.</doc>
+<status status="PASS" start="2025-08-10T02:06:12.448246" elapsed="0.612928"/>
+</kw>
+<kw name="Upload File" owner="QWeb">
+<arg>${resumeUpload}</arg>
+<arg>C:/Users/learn/Downloads/1.jpg</arg>
+<tag>File</tag>
+<tag>Input</tag>
+<tag>Interaction</tag>
+<doc>Uploads a file to an HTML input element of type ``file``.</doc>
+<status status="PASS" start="2025-08-10T02:06:13.061790" elapsed="0.291072"/>
+</kw>
+<kw name="Type Text" owner="QWeb">
+<arg>${interestedArticle}</arg>
+<arg>reading, interesting things, activeness, smart, improvements, and finally I am</arg>
+<tag>Input</tag>
+<tag>Interaction</tag>
+<doc>Type given text to a text field.</doc>
+<status status="PASS" start="2025-08-10T02:06:13.353262" elapsed="0.817899"/>
+</kw>
+<kw name="Click Text" owner="QWeb">
+<arg>${TTsubmit}</arg>
+<tag>Interaction</tag>
+<tag>Text</tag>
+<doc>Click text on web page.</doc>
+<status status="PASS" start="2025-08-10T02:06:14.172011" elapsed="1.219918"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-08-10T02:06:18.394527" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-08-10T02:06:15.393283" elapsed="3.001383"/>
+</kw>
+<kw name="Verify Text" owner="QWeb">
+<arg>Thank You!</arg>
+<tag>Text</tag>
+<tag>Verification</tag>
+<doc>Verify page contains given text.</doc>
+<status status="PASS" start="2025-08-10T02:06:18.395094" elapsed="1.521115"/>
+</kw>
+<kw name="Click Element" owner="QWeb">
+<arg>${prev}</arg>
+<tag>Interaction</tag>
+<doc>Click element specified by xpath.</doc>
+<status status="PASS" start="2025-08-10T02:06:19.916549" elapsed="1.206427"/>
+</kw>
+<kw name="Back" owner="QWeb">
+<tag>Browser</tag>
+<tag>Interaction</tag>
+<doc>Navigates back in the current window.</doc>
+<status status="PASS" start="2025-08-10T02:06:21.123480" elapsed="1.764797"/>
+</kw>
+<kw name="Click Element" owner="QWeb">
+<arg>${next}</arg>
+<tag>Interaction</tag>
+<doc>Click element specified by xpath.</doc>
+<status status="PASS" start="2025-08-10T02:06:22.893734" elapsed="0.732040"/>
+</kw>
+<kw name="Back" owner="QWeb">
+<tag>Browser</tag>
+<tag>Interaction</tag>
+<doc>Navigates back in the current window.</doc>
+<status status="PASS" start="2025-08-10T02:06:23.630923" elapsed="1.186774"/>
+</kw>
+<status status="PASS" start="2025-08-10T02:06:03.741047" elapsed="21.077536"/>
+</test>
+<test id="s1-t15" name="Testing_GURU99_app_selenium_ID_Test" line="359">
+<kw name="Click Element" owner="QWeb">
+<arg>${SeleniumDrpdwn}</arg>
+<tag>Interaction</tag>
+<doc>Click element specified by xpath.</doc>
+<status status="PASS" start="2025-08-10T02:06:24.829903" elapsed="0.541009"/>
+</kw>
+<kw name="Click Element" owner="QWeb">
+<arg>${SeleniumIDEtest}</arg>
+<tag>Interaction</tag>
+<doc>Click element specified by xpath.</doc>
+<status status="PASS" start="2025-08-10T02:06:25.371958" elapsed="35.588961"/>
+</kw>
+<kw name="Verify Text" owner="QWeb">
+<arg>This is DEMO site for TESTING purpose</arg>
+<tag>Text</tag>
+<tag>Verification</tag>
+<doc>Verify page contains given text.</doc>
+<status status="PASS" start="2025-08-10T02:07:00.961229" elapsed="0.149011"/>
+</kw>
+<kw name="Type Text" owner="QWeb">
+<arg>${IDEtestMailOrPhone}</arg>
+<arg>07237937</arg>
+<tag>Input</tag>
+<tag>Interaction</tag>
+<doc>Type given text to a text field.</doc>
+<status status="PASS" start="2025-08-10T02:07:01.110701" elapsed="0.229620"/>
+</kw>
+<kw name="Type Text" owner="QWeb">
+<arg>${IDEtestPass}</arg>
+<arg>Pass@123</arg>
+<tag>Input</tag>
+<tag>Interaction</tag>
+<doc>Type given text to a text field.</doc>
+<status status="PASS" start="2025-08-10T02:07:01.340680" elapsed="0.150069"/>
+</kw>
+<kw name="Click Checkbox" owner="QWeb">
+<arg>Keep me logged in</arg>
+<arg>on</arg>
+<tag>Checkbox</tag>
+<tag>Interaction</tag>
+<doc>Check or uncheck a checkbox.</doc>
+<status status="PASS" start="2025-08-10T02:07:01.491085" elapsed="0.153727"/>
+</kw>
+<kw name="Click Element" owner="QWeb">
+<arg>${IDEtestLogIn}</arg>
+<tag>Interaction</tag>
+<doc>Click element specified by xpath.</doc>
+<status status="PASS" start="2025-08-10T02:07:01.645101" elapsed="26.301393"/>
+</kw>
+<kw name="Back" owner="QWeb">
+<tag>Browser</tag>
+<tag>Interaction</tag>
+<doc>Navigates back in the current window.</doc>
+<status status="PASS" start="2025-08-10T02:07:27.946822" elapsed="0.053142"/>
+</kw>
+<status status="PASS" start="2025-08-10T02:06:24.821785" elapsed="63.178621"/>
+</test>
+<test id="s1-t16" name="Testing_GURU99_app_Guru_Demo_Page" line="369">
+<kw name="Click Element" owner="QWeb">
+<arg>${SeleniumDrpdwn}</arg>
+<tag>Interaction</tag>
+<doc>Click element specified by xpath.</doc>
+<status status="PASS" start="2025-08-10T02:07:28.003046" elapsed="0.165066"/>
+</kw>
+<kw name="Click Element" owner="QWeb">
+<arg>${GuruDemoPage}</arg>
+<tag>Interaction</tag>
+<doc>Click element specified by xpath.</doc>
+<status status="PASS" start="2025-08-10T02:07:28.168487" elapsed="21.943005"/>
+</kw>
+<kw name="Verify Text" owner="QWeb">
+<arg>THIS IS A DEMO PAGE FOR TESTING</arg>
+<tag>Text</tag>
+<tag>Verification</tag>
+<doc>Verify page contains given text.</doc>
+<status status="PASS" start="2025-08-10T02:07:50.111853" elapsed="0.160370"/>
+</kw>
+<status status="PASS" start="2025-08-10T02:07:28.001260" elapsed="22.271501"/>
+</test>
+<test id="s1-t17" name="Testing_GURU99_app_Scroll_Bar_Demo" line="374">
+<kw name="Click Element" owner="QWeb">
+<arg>${SeleniumDrpdwn}</arg>
+<tag>Interaction</tag>
+<doc>Click element specified by xpath.</doc>
+<status status="PASS" start="2025-08-10T02:07:50.274770" elapsed="0.178487"/>
+</kw>
+<kw name="Click Element" owner="QWeb">
+<arg>${scrollbarDemo}</arg>
+<tag>Interaction</tag>
+<doc>Click element specified by xpath.</doc>
+<status status="PASS" start="2025-08-10T02:07:50.453570" elapsed="1.394277"/>
+</kw>
+<kw name="Back" owner="QWeb">
+<tag>Browser</tag>
+<tag>Interaction</tag>
+<doc>Navigates back in the current window.</doc>
+<status status="PASS" start="2025-08-10T02:07:51.848274" elapsed="0.082410"/>
+</kw>
+<status status="PASS" start="2025-08-10T02:07:50.273388" elapsed="1.657859"/>
+</test>
+<test id="s1-t18" name="Testing_GURU99_app_File_uploadSikui" line="379">
+<kw name="Click Element" owner="QWeb">
+<arg>${SeleniumDrpdwn}</arg>
+<tag>Interaction</tag>
+<doc>Click element specified by xpath.</doc>
+<status status="PASS" start="2025-08-10T02:07:51.932507" elapsed="0.150971"/>
+</kw>
+<kw name="Click Element" owner="QWeb">
+<arg>${FileUploadSikuli}</arg>
+<tag>Interaction</tag>
+<doc>Click element specified by xpath.</doc>
+<status status="PASS" start="2025-08-10T02:07:52.084050" elapsed="1.336335"/>
+</kw>
+<kw name="Upload File" owner="QWeb">
+<arg>${SikuliFileUpload}</arg>
+<arg>C:/Users/learn/Downloads/1.jpg</arg>
+<tag>File</tag>
+<tag>Input</tag>
+<tag>Interaction</tag>
+<doc>Uploads a file to an HTML input element of type ``file``.</doc>
+<status status="PASS" start="2025-08-10T02:07:53.420737" elapsed="0.163682"/>
+</kw>
+<kw name="Verify Text" owner="QWeb">
+<arg>File Upload Successful</arg>
+<tag>Text</tag>
+<tag>Verification</tag>
+<doc>Verify page contains given text.</doc>
+<status status="PASS" start="2025-08-10T02:07:53.584788" elapsed="0.703272"/>
+</kw>
+<status status="PASS" start="2025-08-10T02:07:51.932088" elapsed="2.356495"/>
+</test>
+<test id="s1-t19" name="Testing_GURU99_app_cookie_handling" line="385">
+<kw name="Click Element" owner="QWeb">
+<arg>${SeleniumDrpdwn}</arg>
+<tag>Interaction</tag>
+<doc>Click element specified by xpath.</doc>
+<status status="PASS" start="2025-08-10T02:07:54.290474" elapsed="0.224047"/>
+</kw>
+<kw name="Click Element" owner="QWeb">
+<arg>${cookieHandling}</arg>
+<tag>Interaction</tag>
+<doc>Click element specified by xpath.</doc>
+<status status="PASS" start="2025-08-10T02:07:54.528420" elapsed="0.808973"/>
+</kw>
+<kw name="Verify Text" owner="QWeb">
+<arg>Please login</arg>
+<tag>Text</tag>
+<tag>Verification</tag>
+<doc>Verify page contains given text.</doc>
+<status status="PASS" start="2025-08-10T02:07:55.337950" elapsed="0.344674"/>
+</kw>
+<kw name="Type Text" owner="QWeb">
+<arg>${cukiUsername}</arg>
+<arg>ivory</arg>
+<tag>Input</tag>
+<tag>Interaction</tag>
+<doc>Type given text to a text field.</doc>
+<status status="PASS" start="2025-08-10T02:07:55.683153" elapsed="0.277385"/>
+</kw>
+<kw name="Type Text" owner="QWeb">
+<arg>${cukiPassword}</arg>
+<arg>Ivory@123</arg>
+<tag>Input</tag>
+<tag>Interaction</tag>
+<doc>Type given text to a text field.</doc>
+<status status="PASS" start="2025-08-10T02:07:55.960964" elapsed="0.256714"/>
+</kw>
+<kw name="Click Element" owner="QWeb">
+<arg>${cukiSubmit}</arg>
+<tag>Interaction</tag>
+<doc>Click element specified by xpath.</doc>
+<status status="PASS" start="2025-08-10T02:07:56.218069" elapsed="0.196268"/>
+</kw>
+<kw name="Refresh Page" owner="QWeb">
+<tag>Browser</tag>
+<tag>Interaction</tag>
+<doc>Refresh the current window.</doc>
+<status status="PASS" start="2025-08-10T02:07:56.414770" elapsed="0.792546"/>
+</kw>
+<kw name="Verify Text" owner="QWeb">
+<arg>You are logged In</arg>
+<tag>Text</tag>
+<tag>Verification</tag>
+<doc>Verify page contains given text.</doc>
+<status status="PASS" start="2025-08-10T02:07:57.207892" elapsed="0.273751"/>
+</kw>
+<kw name="Verify Text" owner="QWeb">
+<arg>Cookie Data</arg>
+<tag>Text</tag>
+<tag>Verification</tag>
+<doc>Verify page contains given text.</doc>
+<status status="PASS" start="2025-08-10T02:07:57.481984" elapsed="0.146033"/>
+</kw>
+<status status="PASS" start="2025-08-10T02:07:54.289417" elapsed="3.339087"/>
+</test>
+<test id="s1-t20" name="Testing_GURU99_app_Drag&amp;Drop" line="396">
+<kw name="Click Element" owner="QWeb">
+<arg>${SeleniumDrpdwn}</arg>
+<tag>Interaction</tag>
+<doc>Click element specified by xpath.</doc>
+<status status="PASS" start="2025-08-10T02:07:57.629884" elapsed="0.193360"/>
+</kw>
+<kw name="Click Element" owner="QWeb">
+<arg>${drag&amp;drop}</arg>
+<tag>Interaction</tag>
+<doc>Click element specified by xpath.</doc>
+<status status="PASS" start="2025-08-10T02:07:57.823685" elapsed="1.908137"/>
+</kw>
+<status status="PASS" start="2025-08-10T02:07:57.629204" elapsed="2.102907"/>
+</test>
+<test id="s1-t21" name="Testing_GURU99_app_datepicker" line="423">
+<kw name="Click Element" owner="QWeb">
+<arg>${SeleniumDrpdwn}</arg>
+<tag>Interaction</tag>
+<doc>Click element specified by xpath.</doc>
+<status status="PASS" start="2025-08-10T02:07:59.733419" elapsed="0.238761"/>
+</kw>
+<kw name="Click Element" owner="QWeb">
+<arg>${datePicker}</arg>
+<tag>Interaction</tag>
+<doc>Click element specified by xpath.</doc>
+<status status="PASS" start="2025-08-10T02:07:59.973013" elapsed="0.788825"/>
+</kw>
+<kw name="Type Text" owner="QWeb">
+<arg>${dateTimeLocker}</arg>
+<arg>08/13/2025 #10:30 AM</arg>
+<tag>Input</tag>
+<tag>Interaction</tag>
+<doc>Type given text to a text field.</doc>
+<status status="PASS" start="2025-08-10T02:08:00.762207" elapsed="0.391746"/>
+</kw>
+<kw name="Type Text" owner="QWeb">
+<arg>${dateTimeLocker}</arg>
+<arg>\\9</arg>
+<tag>Input</tag>
+<tag>Interaction</tag>
+<doc>Type given text to a text field.</doc>
+<status status="PASS" start="2025-08-10T02:08:01.154379" elapsed="0.211132"/>
+</kw>
+<kw name="Type Text" owner="QWeb">
+<arg>${dateTimeLocker}</arg>
+<arg>10:30 AM</arg>
+<tag>Input</tag>
+<tag>Interaction</tag>
+<doc>Type given text to a text field.</doc>
+<status status="PASS" start="2025-08-10T02:08:01.365870" elapsed="0.176996"/>
+</kw>
+<kw name="Click Element" owner="QWeb">
+<arg>${dateTimeSubmit}</arg>
+<tag>Interaction</tag>
+<doc>Click element specified by xpath.</doc>
+<status status="PASS" start="2025-08-10T02:08:01.543233" elapsed="0.371191"/>
+</kw>
+<kw name="Verify Text" owner="QWeb">
+<arg>Your Birth Date is 2025-08-10</arg>
+<tag>Text</tag>
+<tag>Verification</tag>
+<doc>Verify page contains given text.</doc>
+<status status="PASS" start="2025-08-10T02:08:01.914924" elapsed="0.413154"/>
+</kw>
+<kw name="Close Browser" owner="QWeb">
+<msg time="2025-08-10T02:08:02.340026" level="INFO">${BROWSER_REUSE} = False</msg>
+<tag>Browser</tag>
+<tag>Interaction</tag>
+<doc>Close current browser.</doc>
+<status status="PASS" start="2025-08-10T02:08:02.328606" elapsed="2.634009"/>
+</kw>
+<status status="PASS" start="2025-08-10T02:07:59.732810" elapsed="5.230140"/>
+</test>
+<status status="PASS" start="2025-08-10T02:04:43.562745" elapsed="201.401053"/>
+</suite>
+<statistics>
+<total>
+<stat pass="21" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="guruPageScript" id="s1" pass="21" fail="0" skip="0">guruPageScript</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

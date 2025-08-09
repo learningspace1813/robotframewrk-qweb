@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-07-29T03:24:28.391182" rpa="false" schemaversion="5">
+<suite id="s1" name="PythonProject1" source="C:\Users\learn\PycharmProjects\PythonProject1">
+<suite id="s1-s1" name="Tests" source="C:\Users\learn\PycharmProjects\PythonProject1\Tests">
+<suite id="s1-s1-s1" name="Automation Playground" source="C:\Users\learn\PycharmProjects\PythonProject1\Tests\automation_playground">
+<suite id="s1-s1-s1-s1" name="automationPlayground qweb" source="C:\Users\learn\PycharmProjects\PythonProject1\Tests\automation_playground\automationPlayground_qweb.robot">
+<test id="s1-s1-s1-s1-t1" name="testing of automationPlayground" line="17">
+<kw name="Verify automationPlayground home page">
+<kw name="Open Browser" owner="QWeb">
+<msg time="2025-07-29T03:24:30.439718" level="INFO">QWeb version number: 3.6.1</msg>
+<msg time="2025-07-29T03:24:31.864623" level="INFO">Browser: chrome</msg>
+<msg time="2025-07-29T03:24:31.864846" level="INFO">Browser version: 138.0.7204.169</msg>
+<msg time="2025-07-29T03:24:31.864986" level="INFO">Chromedriver version: 138.0.7204.168 (3e8d82e86e9f508e88ed406c2a24657a6c691d30-refs/branch-heads/7204@{#2081})</msg>
+<arg>${url}</arg>
+<arg>chrome</arg>
+<tag>Browser</tag>
+<tag>Interaction</tag>
+<doc>Open new browser to given url.</doc>
+<status status="PASS" start="2025-07-29T03:24:30.437371" elapsed="2.837182"/>
+</kw>
+<kw name="Verify Text" owner="QWeb">
+<arg>Customers Are Priority One!</arg>
+<tag>Text</tag>
+<tag>Verification</tag>
+<doc>Verify page contains given text.</doc>
+<status status="PASS" start="2025-07-29T03:24:33.274775" elapsed="30.084278"/>
+</kw>
+<kw name="Verify Text" owner="QWeb">
+<arg>Welcome to the customer relationship manager site!</arg>
+<tag>Text</tag>
+<tag>Verification</tag>
+<doc>Verify page contains given text.</doc>
+<status status="PASS" start="2025-07-29T03:25:03.359233" elapsed="30.098583"/>
+</kw>
+<kw name="Verify Text" owner="QWeb">
+<arg>Service with a smile.</arg>
+<tag>Text</tag>
+<tag>Verification</tag>
+<doc>Verify page contains given text.</doc>
+<status status="PASS" start="2025-07-29T03:25:33.458106" elapsed="30.100760"/>
+</kw>
+<status status="PASS" start="2025-07-29T03:24:30.436171" elapsed="93.122815"/>
+</kw>
+<kw name="user authentication">
+<kw name="Click Text" owner="QWeb">
+<arg>Sign In</arg>
+<tag>Interaction</tag>
+<tag>Text</tag>
+<doc>Click text on web page.</doc>
+<status status="PASS" start="2025-07-29T03:26:03.559712" elapsed="30.475857"/>
+</kw>
+<kw name="Type Text" owner="QWeb">
+<arg>Enter email</arg>
+<arg>user@gmail.com</arg>
+<tag>Input</tag>
+<tag>Interaction</tag>
+<doc>Type given text to a text field.</doc>
+<status status="PASS" start="2025-07-29T03:26:34.035867" elapsed="0.226307"/>
+</kw>
+<kw name="Type Text" owner="QWeb">
+<arg>Password</arg>
+<arg>Pass@123</arg>
+<tag>Input</tag>
+<tag>Interaction</tag>
+<doc>Type given text to a text field.</doc>
+<status status="PASS" start="2025-07-29T03:26:34.262378" elapsed="0.135418"/>
+</kw>
+<kw name="Click Text" owner="QWeb">
+<arg>Submit</arg>
+<tag>Interaction</tag>
+<tag>Text</tag>
+<doc>Click text on web page.</doc>
+<status status="PASS" start="2025-07-29T03:26:34.398275" elapsed="0.124055"/>
+</kw>
+<status status="PASS" start="2025-07-29T03:26:03.559431" elapsed="30.963014"/>
+</kw>
+<kw name="adding new customer">
+<kw name="Click Text" owner="QWeb">
+<arg>New Customer</arg>
+<tag>Interaction</tag>
+<tag>Text</tag>
+<doc>Click text on web page.</doc>
+<status status="PASS" start="2025-07-29T03:26:34.523180" elapsed="30.678529"/>
+</kw>
+<kw name="Type Text" owner="QWeb">
+<arg>Enter email</arg>
+<arg>mail@gmail.com</arg>
+<tag>Input</tag>
+<tag>Interaction</tag>
+<doc>Type given text to a text field.</doc>
+<status status="PASS" start="2025-07-29T03:27:05.201999" elapsed="30.158307"/>
+</kw>
+<kw name="Type Text" owner="QWeb">
+<arg>Enter first name</arg>
+<arg>mail</arg>
+<tag>Input</tag>
+<tag>Interaction</tag>
+<doc>Type given text to a text field.</doc>
+<status status="PASS" start="2025-07-29T03:27:35.360502" elapsed="30.125636"/>
+</kw>
+<kw name="Type Text" owner="QWeb">
+<arg>Enter last name</arg>
+<arg>sent</arg>
+<tag>Input</tag>
+<tag>Interaction</tag>
+<doc>Type given text to a text field.</doc>
+<status status="PASS" start="2025-07-29T03:28:05.486351" elapsed="30.112068"/>
+</kw>
+<kw name="Type Text" owner="QWeb">
+<arg>Enter city</arg>
+<arg>Google</arg>
+<tag>Input</tag>
+<tag>Interaction</tag>
+<doc>Type given text to a text field.</doc>
+<status status="PASS" start="2025-07-29T03:28:35.598626" elapsed="30.108341"/>
+</kw>
+<kw name="Drop Down" owner="QWeb">
+<arg>State</arg>
+<arg>Indiana</arg>
+<tag>Dropdown</tag>
+<tag>Interaction</tag>
+<doc>Select an option from dropdown menu/list.</doc>
+<status status="PASS" start="2025-07-29T03:29:05.707218" elapsed="30.139076"/>
+</kw>
+<kw name="Click Element" owner="QWeb">
+<kw name="Log Screenshot" owner="QWeb">
+<msg time="2025-07-29T03:30:16.280465" level="INFO">Saved screenshot to C:\Users\learn\PycharmProjects\PythonProject1\screenshots\screenshot-testing_of_automationPlayground-4237281a-6024-40c8-b7bd-602ea5236911.png</msg>
+<msg time="2025-07-29T03:30:16.287450" level="INFO">Current url is: https://automationplayground.com/crm/add-customer.html</msg>
+<msg time="2025-07-29T03:30:16.287673" level="INFO" html="true">&lt;a href="screenshots/screenshot-testing_of_automationPlayground-4237281a-6024-40c8-b7bd-602ea5236911.png"&gt;&lt;img src="screenshots/screenshot-testing_of_automationPlayground-4237281a-6024-40c8-b7bd-602ea5236911.png" width="800px"&gt;&lt;/a&gt;</msg>
+<tag>Logging</tag>
+<doc>Log screenshot to Robot Framework log.</doc>
+<status status="PASS" start="2025-07-29T03:30:16.104880" elapsed="0.182867"/>
+</kw>
+<arg>${radioMail}</arg>
+<tag>Interaction</tag>
+<doc>Click element specified by xpath.</doc>
+<status status="FAIL" start="2025-07-29T03:29:35.846451" elapsed="40.443248">QWebElementNotFoundError: Unable to find element for locator //input[@type='radio' and @value='Male'] in 10.0 sec</status>
+</kw>
+<kw name="Click Checkbox" owner="QWeb">
+<arg>${checkbox}</arg>
+<tag>Checkbox</tag>
+<tag>Interaction</tag>
+<doc>Check or uncheck a checkbox.</doc>
+<status status="NOT RUN" start="2025-07-29T03:30:16.289858" elapsed="0.000027"/>
+</kw>
+<kw name="Click Element" owner="QWeb">
+<arg>${submit}</arg>
+<tag>Interaction</tag>
+<doc>Click element specified by xpath.</doc>
+<status status="NOT RUN" start="2025-07-29T03:30:16.289979" elapsed="0.000020"/>
+</kw>
+<status status="FAIL" start="2025-07-29T03:26:34.522876" elapsed="221.767246">QWebElementNotFoundError: Unable to find element for locator //input[@type='radio' and @value='Male'] in 10.0 sec</status>
+</kw>
+<kw name="Confirm/Verify added customer successfully">
+<status status="NOT RUN" start="2025-07-29T03:30:16.290719" elapsed="0.000030"/>
+</kw>
+<status status="FAIL" start="2025-07-29T03:24:30.434703" elapsed="345.856535">QWebElementNotFoundError: Unable to find element for locator //input[@type='radio' and @value='Male'] in 10.0 sec</status>
+</test>
+<status status="FAIL" start="2025-07-29T03:24:28.442181" elapsed="347.850328"/>
+</suite>
+<status status="FAIL" start="2025-07-29T03:24:28.440855" elapsed="347.853493"/>
+</suite>
+<status status="FAIL" start="2025-07-29T03:24:28.439380" elapsed="347.856295"/>
+</suite>
+<status status="FAIL" start="2025-07-29T03:24:28.392887" elapsed="347.903937"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="PythonProject1" id="s1" pass="0" fail="1" skip="0">PythonProject1</stat>
+<stat name="Tests" id="s1-s1" pass="0" fail="1" skip="0">PythonProject1.Tests</stat>
+<stat name="Automation Playground" id="s1-s1-s1" pass="0" fail="1" skip="0">PythonProject1.Tests.Automation Playground</stat>
+<stat name="automationPlayground qweb" id="s1-s1-s1-s1" pass="0" fail="1" skip="0">PythonProject1.Tests.Automation Playground.automationPlayground qweb</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-07-29T03:24:30.431864" level="ERROR">Error in file 'C:\Users\learn\PycharmProjects\PythonProject1\Tests\automation_playground\automationPlayground_qweb.robot' on line 3: Error in file 'C:\Users\learn\PycharmProjects\PythonProject1\Tests\automation_playground\aPlayground_resource.robot' on line 35: Resource file with 'Test Cases' section is invalid.</msg>
+</errors>
+</robot>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-07-29T23:49:08.988560" rpa="false" schemaversion="5">
+<suite id="s1" name="automationPlayground qweb" source="C:\Users\learn\PycharmProjects\PythonProject1\Tests\automation_playground\automationPlayground_qweb.robot">
+<test id="s1-t1" name="Verify automationPlayground home page" line="41">
+<kw name="Open Browser" owner="QWeb">
+<msg time="2025-07-29T23:49:10.629711" level="INFO">QWeb version number: 3.6.1</msg>
+<msg time="2025-07-29T23:49:11.874804" level="INFO">Browser: chrome</msg>
+<msg time="2025-07-29T23:49:11.875051" level="INFO">Browser version: 138.0.7204.169</msg>
+<msg time="2025-07-29T23:49:11.875489" level="INFO">Chromedriver version: 138.0.7204.183 (e90faf484ddbc033fc9bf337621761d3dd5c5289-refs/branch-heads/7204@{#2435})</msg>
+<arg>${url}</arg>
+<arg>chrome</arg>
+<tag>Browser</tag>
+<tag>Interaction</tag>
+<doc>Open new browser to given url.</doc>
+<status status="PASS" start="2025-07-29T23:49:10.627939" elapsed="2.767351"/>
+</kw>
+<kw name="Verify Text" owner="QWeb">
+<arg>Customers Are Priority One!</arg>
+<tag>Text</tag>
+<tag>Verification</tag>
+<doc>Verify page contains given text.</doc>
+<status status="PASS" start="2025-07-29T23:49:13.396449" elapsed="30.092489"/>
+</kw>
+<status status="PASS" start="2025-07-29T23:49:10.626654" elapsed="32.862598"/>
+</test>
+<test id="s1-t2" name="user authentication" line="47">
+<kw name="Click Text" owner="QWeb">
+<arg>${signIn}</arg>
+<tag>Interaction</tag>
+<tag>Text</tag>
+<doc>Click text on web page.</doc>
+<status status="PASS" start="2025-07-29T23:49:43.490599" elapsed="30.626407"/>
+</kw>
+<kw name="Type Text" owner="QWeb">
+<arg>${email}</arg>
+<arg>user@gmail.com</arg>
+<tag>Input</tag>
+<tag>Interaction</tag>
+<doc>Type given text to a text field.</doc>
+<status status="PASS" start="2025-07-29T23:50:14.117309" elapsed="0.205299"/>
+</kw>
+<kw name="Type Text" owner="QWeb">
+<arg>${Password}</arg>
+<arg>Pass@123</arg>
+<tag>Input</tag>
+<tag>Interaction</tag>
+<doc>Type given text to a text field.</doc>
+<status status="PASS" start="2025-07-29T23:50:14.322987" elapsed="0.150698"/>
+</kw>
+<kw name="Click Text" owner="QWeb">
+<arg>${submit}</arg>
+<tag>Interaction</tag>
+<tag>Text</tag>
+<doc>Click text on web page.</doc>
+<status status="PASS" start="2025-07-29T23:50:14.474087" elapsed="0.223213"/>
+</kw>
+<status status="PASS" start="2025-07-29T23:49:43.489897" elapsed="31.207692"/>
+</test>
+<test id="s1-t3" name="adding new customer" line="53">
+<kw name="Click Text" owner="QWeb">
+<arg>${newCustomer}</arg>
+<tag>Interaction</tag>
+<tag>Text</tag>
+<doc>Click text on web page.</doc>
+<status status="PASS" start="2025-07-29T23:50:14.698701" elapsed="31.456187"/>
+</kw>
+<kw name="Verify Text" owner="QWeb">
+<arg>${addCustomer}</arg>
+<tag>Text</tag>
+<tag>Verification</tag>
+<doc>Verify page contains given text.</doc>
+<status status="PASS" start="2025-07-29T23:50:46.155687" elapsed="30.143645"/>
+</kw>
+<kw name="Type Text" owner="QWeb">
+<arg>${enterMail}</arg>
+<arg>mail@gmail.com</arg>
+<tag>Input</tag>
+<tag>Interaction</tag>
+<doc>Type given text to a text field.</doc>
+<status status="PASS" start="2025-07-29T23:51:16.299652" elapsed="30.150324"/>
+</kw>
+<kw name="Type Text" owner="QWeb">
+<arg>${enterFName}</arg>
+<arg>mail</arg>
+<tag>Input</tag>
+<tag>Interaction</tag>
+<doc>Type given text to a text field.</doc>
+<status status="PASS" start="2025-07-29T23:51:46.450457" elapsed="30.115296"/>
+</kw>
+<kw name="Type Text" owner="QWeb">
+<arg>${enterLName}</arg>
+<arg>sent</arg>
+<tag>Input</tag>
+<tag>Interaction</tag>
+<doc>Type given text to a text field.</doc>
+<status status="PASS" start="2025-07-29T23:52:16.566108" elapsed="30.116683"/>
+</kw>
+<kw name="Type Text" owner="QWeb">
+<arg>${enterCity}</arg>
+<arg>Google</arg>
+<tag>Input</tag>
+<tag>Interaction</tag>
+<doc>Type given text to a text field.</doc>
+<status status="PASS" start="2025-07-29T23:52:46.683100" elapsed="30.140032"/>
+</kw>
+<kw name="Drop Down" owner="QWeb">
+<arg>State</arg>
+<arg>Indiana</arg>
+<tag>Dropdown</tag>
+<tag>Interaction</tag>
+<doc>Select an option from dropdown menu/list.</doc>
+<status status="PASS" start="2025-07-29T23:53:16.823457" elapsed="30.114245"/>
+</kw>
+<kw name="Click Element" owner="QWeb">
+<arg>${radioGender}</arg>
+<tag>Interaction</tag>
+<doc>Click element specified by xpath.</doc>
+<status status="PASS" start="2025-07-29T23:53:46.938046" elapsed="30.098859"/>
+</kw>
+<kw name="Click Checkbox" owner="QWeb">
+<arg>Add to promotional list</arg>
+<arg>on</arg>
+<tag>Checkbox</tag>
+<tag>Interaction</tag>
+<doc>Check or uncheck a checkbox.</doc>
+<status status="PASS" start="2025-07-29T23:54:17.037192" elapsed="30.244371"/>
+</kw>
+<kw name="Verify Checkbox" owner="QWeb">
+<arg>Add to promotional list</arg>
+<arg>on</arg>
+<tag>Checkbox</tag>
+<tag>Verification</tag>
+<doc>Verify that checkbox element exist.</doc>
+<status status="PASS" start="2025-07-29T23:54:47.281947" elapsed="30.149111"/>
+</kw>
+<kw name="Click Element" owner="QWeb">
+<arg>${submit}</arg>
+<tag>Interaction</tag>
+<doc>Click element specified by xpath.</doc>
+<status status="PASS" start="2025-07-29T23:55:17.431354" elapsed="30.106018"/>
+</kw>
+<status status="PASS" start="2025-07-29T23:50:14.698175" elapsed="332.839489"/>
+</test>
+<test id="s1-t4" name="Confirm/Verify added customer successfully" line="75">
+<kw name="Verify Text" owner="QWeb">
+<msg time="2025-07-29T23:56:17.671179" level="INFO">${verify1} = None</msg>
+<var>${verify1}</var>
+<arg>${successPopup}</arg>
+<tag>Text</tag>
+<tag>Verification</tag>
+<doc>Verify page contains given text.</doc>
+<status status="PASS" start="2025-07-29T23:55:47.538837" elapsed="30.132382"/>
+</kw>
+<if>
+<branch type="IF" condition="$verify1">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Success! New customer added!</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-07-29T23:56:17.671809" elapsed="0.000023"/>
+</kw>
+<status status="NOT RUN" start="2025-07-29T23:56:17.671540" elapsed="0.000327"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>ValueError : The checkbox value is not the same</arg>
+<arg>[WARN]</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-29T23:56:17.671982" elapsed="0.000287"/>
+</kw>
+<status status="PASS" start="2025-07-29T23:56:17.671900" elapsed="0.000426"/>
+</branch>
+<status status="PASS" start="2025-07-29T23:56:17.671490" elapsed="0.000883"/>
+</if>
+<status status="PASS" start="2025-07-29T23:55:47.538283" elapsed="30.134365"/>
+</test>
+<status status="PASS" start="2025-07-29T23:49:08.990343" elapsed="428.683141"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="automationPlayground qweb" id="s1" pass="4" fail="0" skip="0">automationPlayground qweb</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

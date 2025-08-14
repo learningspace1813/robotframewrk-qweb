@@ -18,6 +18,8 @@ pipeline {
                 sh 'python3 -m venv venv'
                 sh '. venv/bin/activate && pip install --upgrade pip'
                 sh '. venv/bin/activate && pip install -r requirements.txt'
+                // output file is not there then create mkdir
+                bat 'if not exist results mkdir results'
             }
         }
 

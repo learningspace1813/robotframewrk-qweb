@@ -1,5 +1,6 @@
 robotframework==7.0
-robotframework-qweb==3.5.0
+git+https://github.com/qentinelqi/qweb.git@3.5.0
+# robotframework-qweb==3.5.0
 # Add any extra libs your tests use
 # Example:
 requests==2.32.3

@@ -1,0 +1,7 @@
+robotframework==7.0
+robotframework-qweb==3.2.0
+# Add any extra libs your tests use
+# Example:
+requests==2.32.3
+pandas==2.2.3
+xlrd==2.0.1
